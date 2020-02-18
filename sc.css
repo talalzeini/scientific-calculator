@@ -5,6 +5,7 @@ body{
     background: cover;
     background-size: 200%;
     overflow: hidden;
+
 }
 
 #container{
@@ -25,7 +26,7 @@ body{
     top:20px; 
 }
 .screen input{
-    background-color:#e5dfa0;
+    background-color:#99ccff;
     height:56px;
     width:266px;
     color:black;
@@ -49,6 +50,7 @@ p{
     width:40px;
     height:40px;
     border:none;
+    font-size: 13px;
     border-radius:50%;
     margin-left: 10px;
     cursor:pointer;
