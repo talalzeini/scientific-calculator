@@ -53,6 +53,14 @@ p{
     margin-left: 10px;
     cursor:pointer;
 }
+ .zero{
+    width:94px;
+    height:40px;
+    border:none;
+    border-radius:20px;
+    margin-left: 10px;
+    cursor:pointer;
+}
 .button:hover{
     transform:scale(1.1);
 }
