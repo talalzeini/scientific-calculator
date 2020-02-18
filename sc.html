@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="sc.css">
+<title>
+</title>
+</head>
+<body>
+<div id="container">
+<div class="screen"><form name="calculator"><input name="display" maxlenght ="50" type="text" id="scn" size="25" readonly></form></div>
+<div class="btns">
+
+
+            <p>
+                            <input type="button" value="SIN" class="button black">
+                            <input type="button" value="COS" class="button black">
+                            <input type="button" value="TAN" class="button black">
+                            <input type="button" value="(-)" class="button black">
+                            <input type="button" value="CLR" class="button black">
+            </p>
+                        <p>
+                                <input type="button" value="SQRT" class="button black">
+                                <input type="button" value="SQR" class="button black">
+                                <input type="button" value="^" class="button black">
+                                <input type="button" value="LOG" class="button black">
+                                <input type="button" value="ln" class="button black">
+                        </p>
+                                    <p>
+                                            <input type="button" value="RCL" class="button black">
+                                            <input type="button" value="(" class="button black">
+                                            <input type="button" value=")" class="button black">
+                                            <input type="button" value="M+" class="button black">
+                                            <input type="button" value="MOD" class="button black">
+                                    </p>                                      
+            <p>
+                            <input type="button" value="7" class="button silver" onclick="calculator.display.value+='7'"> 
+                            <input type="button" value="8" class="button silver" onclick="calculator.display.value+='8'"> 
+                            <input type="button" value="9" class="button silver" onclick="calculator.display.value+='9'"> 
+                            <input type="button" value="DEL" class="button red"  onclick="calculator.display.value=''"> 
+                            <input type="button" value="EXIT" class="button red">
+            </p>
+                        <p>
+                                    <input type="button" value="4" class="button silver"  onclick="calculator.display.value+='4'"> 
+                                    <input type="button" value="5" class="button silver" onclick="calculator.display.value+='5'"> 
+                                    <input type="button" value="6" class="button silver" onclick="calculator.display.value+='6'"> 
+                                    <input type="button" value="x" class="button silver" onclick="calculator.display.value+='*'"> 
+                                    <input type="button" value="/" class="button silver"  onclick="calculator.display.value+='/'"> 
+                        </p>
+                                    <p>
+                                            <input type="button" value="1" class="button silver" onclick="calculator.display.value+='1'">                                                
+                                            <input type="button" value="2" class="button silver" onclick="calculator.display.value+='2'">  
+                                            <input type="button" value="3" class="button silver" onclick="calculator.display.value+='3'">  
+                                            <input type="button" value="+" class="button silver" onclick="calculator.display.value+='+'">  
+                                            <input type="button" value="-" class="button silver" onclick="calculator.display.value+='-'">  
+                                    </p>
+                                                <p>
+                                                    <input type="button" value="0" class="button silver" onclick="calculator.display.value+='0'">  
+                                                    <input type="button" value="." class="button silver" onclick="calculator.display.value+='.'"> 
+                                                    <input type="button" value="EXP" class="button silver"  onclick="calculator.display.value+=Math.exp(calculator.display.value)"> 
+                                                    <input type="button" value="PI" class="button silver" onclick="calculator.display.value+=Math.PI"> 
+                                                    <input type="button" value="=" class="button silver"  onclick="calculator.display.value=eval(calculator.display.value)"> 
+                                                </p>
+</div>
+</div>
+</body>
+</html> 
