@@ -2,36 +2,49 @@
 <html>
 <head>
 <link rel="stylesheet" type="text/css" href="sc.css">
-<title>CALCULATOR
-</title>
+<title>CALCULATOR</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
 <script type="text/javascript" src="sc.js"></script>
 </head>
 <body>
 <div id="container">
-<div class="screen"><form name="calculator"><input name="display" maxlenght ="50" type="text" id="scn" size="25" readonly></form></div>
+<div class="screen"><form name="calculator"><input name="display" maxlength ="5" type="text" id="scn" size="5" readonly></form></div>
 <div class="btns">
  
 
-
-            <p>
+      <p id="radIcon" class="hide" style="font-size:10px;left:15px;position:absolute; bottom:362px; opacity:0.5;">RAD</p>
+      <p id="degIcon" style="font-size:10px;left:15px;position:absolute; bottom:362px; opacity:0.5;">DEG</p>
+            <p id="radians" class="hide">
+          
                             <input type="button" value="SIN" class="button black" onclick="calculator.display.value=Math.sin(calculator.display.value)"> 
-                            <input type="button" value="COS" class="button black" onclick="calculator.display.value=Math.cos((calculator.display.value))"> 
+                            <input type="button" value="COS" class="button black" onclick="calculator.display.value= Math.cos(calculator.display.value) "> 
                             <input type="button" value="TAN" class="button black" onclick="calculator.display.value=Math.tan(calculator.display.value)"> 
                             <input type="button" value="( - )" class="button black" onclick="changeSign(calculator.display.value)"> 
                             <input type="button" value="ABS" class="button black" onclick="calculator.display.value=Math.abs(calculator.display.value)"> 
             </p>
+            <p id="degrees" class="">
+          
+                <input type="button" value="SIN" class="button black" onclick="calculator.display.value=Math.sin(calculator.display.value*(Math.PI / 180))"> 
+                <input type="button" value="COS" class="button black" onclick="calculator.display.value= Math.cos(calculator.display.value*(Math.PI / 180)) "> 
+                <input type="button" value="TAN" class="button black" onclick="calculator.display.value=Math.tan(calculator.display.value*(Math.PI / 180))"> 
+                <input type="button" value="( - )" class="button black" onclick="changeSign(calculator.display.value)"> 
+                <input type="button" value="ABS" class="button black" onclick="calculator.display.value=Math.abs(calculator.display.value)"> 
+            </p>
                         <p>
                                 <input type="button" value="&radic;" class="button black"  onclick="calculator.display.value=Math.sqrt(calculator.display.value)"> 
-                                <input type="button" value="SQR" class="button black" onclick="calculator.display.value=Math.pow(calculator.display.value, 2)"> 
-                                <input type="button" value="^" class="button black" onclick="calculator.display.value=Math.pow(calculator.display.value, calculator.display.value)"> 
+                                <input type="button" value="x²" class="button black" onclick="calculator.display.value=Math.pow(calculator.display.value, 2)"> 
+                                <input type="button" value="x³" class="button black" onclick="calculator.display.value=Math.pow(calculator.display.value, 3)"> 
                                 <input type="button" value="LOG" class="button black" onclick="calculator.display.value=Math.log10(calculator.display.value)"> 
                                 <input type="button" value="ln" class="button black" onclick="calculator.display.value=Math.log(calculator.display.value)"> 
                         </p>
                                     <p>
-                                            <input type="button" value="C" class="button black" onclick="calculator.display.value=''">
+                                            <input type="button" value="e" class="button black" onclick="calculator.display.value=Math.exp(calculator.display.value)">
                                             <input type="button" value="(" class="button black"  onclick="calculator.display.value+='('">
                                             <input type="button" value=")" class="button black" onclick="calculator.display.value+=')'">
-                                            <input type="button" value="M+" class="button black" onclick="calculator.display.value='M+'">
+                                            <input id="rad" type="button" value="RAD" class="button black" onclick="toDeg()">
+                                            <input id="deg" type="button" value="DEG" class="button black hide" onclick="toRad()">
                                             <input type="button" value="%" class="button black" onclick="calculator.display.value=calculator.display.value+='%'">
                                     </p>                                      
             <p>
@@ -39,7 +52,7 @@
                             <input type="button" value="8" class="button silver" onclick="calculator.display.value+='8'"> 
                             <input type="button" value="9" class="button silver" onclick="calculator.display.value+='9'"> 
                             <input type="button" value="DEL" class="button red"  onclick="calculator.display.value= calculator.display.value=calculator.display.value.substring(0, calculator.display.value.length-1)"> 
-                            <input type="button" value="EXIT" class="button red" onclick="location.href='https://www.instagram.com/talalzeini/?hl=en';">
+                            <input type="button" value="C" class="button red" onclick="calculator.display.value=''">
             </p>
                         <p>
                                     <input type="button" value="4" class="button silver"  onclick="calculator.display.value+='4'"> 
