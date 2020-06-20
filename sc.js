@@ -6,6 +6,7 @@ calculator.display.value = calculator.display.value.substring(1,calculator.displ
 calculator.display.value = "-"+ calculator.display.value;
 }
 }
+screen.lockOrientation('landscape');
 
 function toDeg(){
     const rad = document.getElementById('rad');
