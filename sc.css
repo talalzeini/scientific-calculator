@@ -188,6 +188,7 @@ body{
     background: cover;
     background-size: 200%;
     overflow: hidden;
+    display: none;
 }
 
 #container{
