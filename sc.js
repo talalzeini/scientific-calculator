@@ -6,10 +6,7 @@ calculator.display.value = calculator.display.value.substring(1,calculator.displ
 calculator.display.value = "-"+ calculator.display.value;
 }
 }
-function lock (orientation) {
-   
-    screen.orientation.lock(orientation);
-  }
+
 function toDeg(){
     const rad = document.getElementById('rad');
     const deg= document.getElementById('deg');
