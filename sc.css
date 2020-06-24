@@ -113,7 +113,7 @@ body{
     border-radius:8px;
     position:relative;
     left:15px;
-    top:40px; 
+    top:20px; 
 }
 .screen input{
     background-color:#99ccff;
@@ -184,30 +184,32 @@ p{
 
 body{
     transform:scale(0.6);
-    background: pink;
+    background: white;
     background: cover;
     background-size: 200%;
     overflow: hidden;
-
 }
 
 #container{
+    display: none;
     background-color:#66b3ff;
     height:500px;
     width:300px;
     border-radius:40px;
     display: block;
-    margin-top: -100px;
+    margin-top: -92px;
 }
 .screen{
+    display: none;
     height:60px;
     width:230px;
     border-radius:8px;
     position:relative;
     left:15px;
-    top:0px; 
+    top:20px;
 }
 .screen input{
+    display: none;
     background-color:#99ccff;
     height:56px;
     width:230px;
@@ -221,14 +223,17 @@ body{
     top:3px; 
 }
 .btns{
+    display: none;
     position:relative;
     top: 30px;
     left:15px;
 }
 p{
+    display: none;
     line-height:30px;
 }
 .button{
+    display: none;
     width:40px;
     height:40px;
     border:none;
@@ -238,6 +243,7 @@ p{
     cursor:pointer;
 }
 .zero{
+    display: none;
     width:94px;
     height:40px;
     border:none;
@@ -249,17 +255,20 @@ p{
     transform:scale(1.1);
 }
 .button.black{
+    display: none;
     color:white;
     background-color:black;
     font-size: 10px;
 }
 
 .button.silver{
+    display: none;
     color:black;
     background-color: #647489;
     font-size: 11px;
 }
 .button.red{
+    display: none;
     background-color: red;
     color:white;
     font-size: 11px;
@@ -270,23 +279,3 @@ p{
 }
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
